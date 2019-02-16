@@ -1529,13 +1529,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 button.mfp-arrow-right {
-  background-image: url(../images/icons/icon-next.png);
+  background-image: url(https://raw.githubusercontent.com/chriscrutt/website/master/images/icons/icon-next.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 button.mfp-arrow-left {
-  background-image: url(../images/icons/icon-prev.png);
+  background-image: url(https://raw.githubusercontent.com/chriscrutt/website/master/images/icons/icon-prev.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1548,7 +1548,7 @@ button.mfp-close {
   right: 0;
   top: 0;
   color: transparent !important;
-  background-image: url(../images/icons/icon-close.png);
+  background-image: url(https://raw.githubusercontent.com/chriscrutt/website/master/images/icons/icon-close.png);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer !important;
