@@ -69,7 +69,7 @@ var requirejs, require, define;
     }
 
     /**
-     * Given a relative module name, like https://raw.githubusercontent.com/chriscrutt/website/master/something, normalize it to
+     * Given a relative module name, like ./something, normalize it to
      * a real name that can be mapped to a path.
      * @param {String} name the relative name
      * @param {String} baseName a real name that the name arg is relative
@@ -127,7 +127,7 @@ var requirejs, require, define;
                 //end trimDots
 
                 name = name.join("/");
-            } else if (name.indexOf('https://raw.githubusercontent.com/chriscrutt/website/master/') === 0) {
+            } else if (name.indexOf('./') === 0) {
                 // No baseName, so this is ID is resolved relative
                 // to baseUrl, pull off the leading dot.
                 name = name.substring(2);
@@ -773,7 +773,7 @@ S2.define('select2/utils',[
 
 S2.define('select2/results',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  './utils'
 ], function ($, Utils) {
   function Results ($element, options, dataAdapter) {
     this.$element = $element;
@@ -1323,8 +1323,8 @@ S2.define('select2/keys',[
 
 S2.define('select2/selection/base',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/keys'
+  '../utils',
+  '../keys'
 ], function ($, Utils, KEYS) {
   function BaseSelection ($element, options) {
     this.$element = $element;
@@ -1482,9 +1482,9 @@ S2.define('select2/selection/base',[
 
 S2.define('select2/selection/single',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/base',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/keys'
+  './base',
+  '../utils',
+  '../keys'
 ], function ($, BaseSelection, Utils, KEYS) {
   function SingleSelection () {
     SingleSelection.__super__.constructor.apply(this, arguments);
@@ -1582,8 +1582,8 @@ S2.define('select2/selection/single',[
 
 S2.define('select2/selection/multiple',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/base',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  './base',
+  '../utils'
 ], function ($, BaseSelection, Utils) {
   function MultipleSelection ($element, options) {
     MultipleSelection.__super__.constructor.apply(this, arguments);
@@ -1691,7 +1691,7 @@ S2.define('select2/selection/multiple',[
 });
 
 S2.define('select2/selection/placeholder',[
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  '../utils'
 ], function (Utils) {
   function Placeholder (decorated, $element, options) {
     this.placeholder = this.normalizePlaceholder(options.get('placeholder'));
@@ -1742,7 +1742,7 @@ S2.define('select2/selection/placeholder',[
 
 S2.define('select2/selection/allowClear',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/keys'
+  '../keys'
 ], function ($, KEYS) {
   function AllowClear () { }
 
@@ -1840,8 +1840,8 @@ S2.define('select2/selection/allowClear',[
 
 S2.define('select2/selection/search',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/keys'
+  '../utils',
+  '../keys'
 ], function ($, Utils, KEYS) {
   function Search (decorated, $element, options) {
     decorated.call(this, $element, options);
@@ -2992,7 +2992,7 @@ S2.define('select2/diacritics',[
 });
 
 S2.define('select2/data/base',[
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  '../utils'
 ], function (Utils) {
   function BaseAdapter ($element, options) {
     BaseAdapter.__super__.constructor.call(this);
@@ -3033,8 +3033,8 @@ S2.define('select2/data/base',[
 });
 
 S2.define('select2/data/select',[
-  'https://raw.githubusercontent.com/chriscrutt/website/master/base',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
+  './base',
+  '../utils',
   'jquery'
 ], function (BaseAdapter, Utils, $) {
   function SelectAdapter ($element, options) {
@@ -3319,8 +3319,8 @@ S2.define('select2/data/select',[
 });
 
 S2.define('select2/data/array',[
-  'https://raw.githubusercontent.com/chriscrutt/website/master/select',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
+  './select',
+  '../utils',
   'jquery'
 ], function (SelectAdapter, Utils, $) {
   function ArrayAdapter ($element, options) {
@@ -3399,8 +3399,8 @@ S2.define('select2/data/array',[
 });
 
 S2.define('select2/data/ajax',[
-  'https://raw.githubusercontent.com/chriscrutt/website/master/array',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
+  './array',
+  '../utils',
   'jquery'
 ], function (ArrayAdapter, Utils, $) {
   function AjaxAdapter ($element, options) {
@@ -3851,7 +3851,7 @@ S2.define('select2/data/maximumSelectionLength',[
 
 S2.define('select2/dropdown',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  './utils'
 ], function ($, Utils) {
   function Dropdown ($element, options) {
     this.$element = $element;
@@ -3894,7 +3894,7 @@ S2.define('select2/dropdown',[
 
 S2.define('select2/dropdown/search',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  '../utils'
 ], function ($, Utils) {
   function Search () { }
 
@@ -4129,7 +4129,7 @@ S2.define('select2/dropdown/infiniteScroll',[
 
 S2.define('select2/dropdown/attachBody',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  '../utils'
 ], function ($, Utils) {
   function AttachBody (decorated, $element, options) {
     this.$dropdownParent = options.get('dropdownParent') || $(document.body);
@@ -4525,38 +4525,38 @@ S2.define('select2/defaults',[
   'jquery',
   'require',
 
-  'https://raw.githubusercontent.com/chriscrutt/website/master/results',
+  './results',
 
-  'https://raw.githubusercontent.com/chriscrutt/website/master/selection/single',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/selection/multiple',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/selection/placeholder',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/selection/allowClear',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/selection/search',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/selection/eventRelay',
+  './selection/single',
+  './selection/multiple',
+  './selection/placeholder',
+  './selection/allowClear',
+  './selection/search',
+  './selection/eventRelay',
 
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/translation',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/diacritics',
+  './utils',
+  './translation',
+  './diacritics',
 
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/select',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/array',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/ajax',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/tags',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/tokenizer',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/minimumInputLength',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/maximumInputLength',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/data/maximumSelectionLength',
+  './data/select',
+  './data/array',
+  './data/ajax',
+  './data/tags',
+  './data/tokenizer',
+  './data/minimumInputLength',
+  './data/maximumInputLength',
+  './data/maximumSelectionLength',
 
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown/search',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown/hidePlaceholder',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown/infiniteScroll',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown/attachBody',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown/minimumResultsForSearch',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown/selectOnClose',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/dropdown/closeOnSelect',
+  './dropdown',
+  './dropdown/search',
+  './dropdown/hidePlaceholder',
+  './dropdown/infiniteScroll',
+  './dropdown/attachBody',
+  './dropdown/minimumResultsForSearch',
+  './dropdown/selectOnClose',
+  './dropdown/closeOnSelect',
 
-  'https://raw.githubusercontent.com/chriscrutt/website/master/i18n/en'
+  './i18n/en'
 ], function ($, require,
 
              ResultsList,
@@ -4875,8 +4875,8 @@ S2.define('select2/defaults',[
     }
 
     this.defaults = {
-      amdBase: 'https://raw.githubusercontent.com/chriscrutt/website/master/',
-      amdLanguageBase: 'https://raw.githubusercontent.com/chriscrutt/website/master/i18n/',
+      amdBase: './',
+      amdLanguageBase: './i18n/',
       closeOnSelect: true,
       debug: false,
       dropdownAutoWidth: false,
@@ -4921,8 +4921,8 @@ S2.define('select2/defaults',[
 S2.define('select2/options',[
   'require',
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/defaults',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  './defaults',
+  './utils'
 ], function (require, $, Defaults, Utils) {
   function Options (options, $element) {
     this.options = options;
@@ -5043,9 +5043,9 @@ S2.define('select2/options',[
 
 S2.define('select2/core',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/options',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/keys'
+  './options',
+  './utils',
+  './keys'
 ], function ($, Options, Utils, KEYS) {
   var Select2 = function ($element, options) {
     if ($element.data('select2') != null) {
@@ -5700,7 +5700,7 @@ S2.define('select2/compat/utils',[
 
 S2.define('select2/compat/containerCss',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  './utils'
 ], function ($, CompatUtils) {
   // No-op CSS adapter that discards all classes by default
   function _containerAdapter (clazz) {
@@ -5757,7 +5757,7 @@ S2.define('select2/compat/containerCss',[
 
 S2.define('select2/compat/dropdownCss',[
   'jquery',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/utils'
+  './utils'
 ], function ($, CompatUtils) {
   // No-op CSS adapter that discards all classes by default
   function _dropdownAdapter (clazz) {
@@ -6375,8 +6375,8 @@ S2.define('jquery.select2',[
   'jquery',
   'jquery-mousewheel',
 
-  'https://raw.githubusercontent.com/chriscrutt/website/master/select2/core',
-  'https://raw.githubusercontent.com/chriscrutt/website/master/select2/defaults'
+  './select2/core',
+  './select2/defaults'
 ], function ($, _, Select2, Defaults) {
   if ($.fn.select2 == null) {
     // All methods that should return the element
