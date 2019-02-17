@@ -12,8 +12,8 @@
     font-weight: normal;
     font-style: normal;
 
-    src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/slick.eot');
-    src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/slick.eot?#iefix') format('embedded-opentype'), url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/slick.woff') format('woff'), url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/slick.ttf') format('truetype'), url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/slick.svg#slick') format('svg');
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,

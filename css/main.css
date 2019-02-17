@@ -41,60 +41,60 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Poppins/Poppins-Regular.ttf'); 
+  src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Light;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Poppins/Poppins-Light.ttf'); 
+  src: url('../fonts/Poppins/Poppins-Light.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-ExtraLight;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Poppins/Poppins-ExtraLight.ttf'); 
+  src: url('../fonts/Poppins/Poppins-ExtraLight.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Poppins/Poppins-Medium.ttf'); 
+  src: url('../fonts/Poppins/Poppins-Medium.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Italic;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Poppins/Poppins-Italic.ttf'); 
+  src: url('../fonts/Poppins/Poppins-Italic.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Poppins/Poppins-Bold.ttf'); 
+  src: url('../fonts/Poppins/Poppins-Bold.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Poppins/Poppins-SemiBold.ttf'); 
+  src: url('../fonts/Poppins/Poppins-SemiBold.ttf'); 
 }
 
 
 /*---------------------------------------------*/
 @font-face {
   font-family: PlayfairDisplay-Regular;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
 }
 
 @font-face {
   font-family: PlayfairDisplay-Bold;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf'); 
+  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf'); 
 }
 
 /*---------------------------------------------*/
 @font-face {
   font-family: Montserrat-Regular;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Montserrat/Montserrat-Regular.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('https://raw.githubusercontent.com/chriscrutt/website/master/fonts/Montserrat/Montserrat-Bold.ttf'); 
+  src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
 }
 
 
@@ -1529,13 +1529,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 button.mfp-arrow-right {
-  background-image: url(https://raw.githubusercontent.com/chriscrutt/website/master//images/icons/icon-next.png);
+  background-image: url(../images/icons/icon-next.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 button.mfp-arrow-left {
-  background-image: url(https://raw.githubusercontent.com/chriscrutt/website/master//images/icons/icon-prev.png);
+  background-image: url(../images/icons/icon-prev.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1548,7 +1548,7 @@ button.mfp-close {
   right: 0;
   top: 0;
   color: transparent !important;
-  background-image: url(https://raw.githubusercontent.com/chriscrutt/website/master//images/icons/icon-close.png);
+  background-image: url(../images/icons/icon-close.png);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer !important;

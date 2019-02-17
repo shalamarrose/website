@@ -1047,7 +1047,7 @@ $.magnificPopup.registerModule(AJAX_NS, {
 	options: {
 		settings: null,
 		cursor: 'mfp-ajax-cur',
-		tError: '<a href="https://raw.githubusercontent.com/chriscrutt/website/master/%url%">The content</a> could not be loaded.'
+		tError: '<a href="%url%">The content</a> could not be loaded.'
 	},
 
 	proto: {
@@ -1144,7 +1144,7 @@ $.magnificPopup.registerModule('image', {
 		cursor: 'mfp-zoom-out-cur',
 		titleSrc: 'title',
 		verticalFit: true,
-		tError: '<a href="https://raw.githubusercontent.com/chriscrutt/website/master/%url%">The image</a> could not be loaded.'
+		tError: '<a href="%url%">The image</a> could not be loaded.'
 	},
 
 	proto: {
@@ -1571,7 +1571,7 @@ $.magnificPopup.registerModule(IFRAME_NS, {
 	options: {
 		markup: '<div class="mfp-iframe-scaler">'+
 					'<div class="mfp-close"></div>'+
-					'<iframe class="mfp-iframe" src="https://raw.githubusercontent.com/chriscrutt/website/master///about:blank" frameborder="0" allowfullscreen></iframe>'+
+					'<iframe class="mfp-iframe" src="//about:blank" frameborder="0" allowfullscreen></iframe>'+
 				'</div>',
 
 		srcAction: 'iframe_src',
