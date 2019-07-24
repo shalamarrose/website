@@ -3,8 +3,8 @@
 /*//////////////////////////////////////////////////////////////////
 [ REBOOT ]*/
 *, *:before, *:after {
-	margin: 0px; 
-	padding: 0px; 
+	margin: 0px;
+	padding: 0px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -574,7 +574,11 @@ iframe {border: none;}
 .p-b-10, .p-tb-10, .p-all-10 {padding-bottom: 10px;}
 .p-b-11, .p-tb-11, .p-all-11 {padding-bottom: 11px;}
 .p-b-12, .p-tb-12, .p-all-12 {padding-bottom: 12px;}
+
 .p-b-13, .p-tb-13, .p-all-13 {padding-bottom: 13px;}
+.p-b-13, .p-tb-13, .p-all-13 {padding-top: 13px;}
+
+
 .p-b-14, .p-tb-14, .p-all-14 {padding-bottom: 14px;}
 .p-b-15, .p-tb-15, .p-all-15 {padding-bottom: 15px;}
 .p-b-16, .p-tb-16, .p-all-16 {padding-bottom: 16px;}
