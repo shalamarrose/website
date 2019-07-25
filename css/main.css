@@ -258,11 +258,11 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 
 /*---------------------------------------------*/
-.topbar-mobile li {
+/* .topbar-mobile li {
   padding: 8px 20px;
   border-top: 1px solid rgba(255,255,255,0.05);
   background-color: #222;
-}
+} */
 
 
 
@@ -512,9 +512,9 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 /*---------------------------------------------*/
-.wrap-header-mobile .wrap-icon-header {
+/* .wrap-header-mobile .wrap-icon-header {
   flex-grow: unset;
-}
+} */
 
 
 /*------------------------------------------------------------------
@@ -648,7 +648,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 [ Header Mobile ]*/
-.wrap-header-mobile {
+/* .wrap-header-mobile {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -665,11 +665,11 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   -webkit-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -o-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
   -ms-box-shadow: 0 0px 3px 0px rgba(0,0,0,0.2);
-}
+} */
 
 /*------------------------------------------------------------------
 [ Logo mobile ]*/
-.logo-mobile {
+/* .logo-mobile {
   display: block;
   position: relative;
   height: 80%;
@@ -687,7 +687,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   left: 0;
   bottom: 0;
   margin: auto;
-}
+} */
 
 
 
@@ -713,7 +713,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 /*---------------------------------------------*/
-@media (max-width: 991px){
+/* @media (max-width: 991px){
   .wrap-header-mobile {
     display: -webkit-box;
     display: -webkit-flex;
@@ -726,11 +726,11 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 /*==================================================================
 [ Menu mobile ]*/
-.menu-mobile {
+/* .menu-mobile {
   width: 100%;
   background-color: white;
   display: none;
-}
+} */ */
 
 .main-menu-m {
   padding-top: 10px;
@@ -805,11 +805,11 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
   color: #555555;
 }
 
-@media (min-width: 992px){
+/* @media (min-width: 992px){
   .menu-mobile {
     display: none;
   }
-}
+} */
 
 
 /*//////////////////////////////////////////////////////////////////
@@ -2138,6 +2138,7 @@ input.num-product::-webkit-inner-spin-button {
 .cl10 {color: #1d1d1d;}
 .cl11 {color: #f9ba48;}
 .cl12 {color: #ccc;}
+.zmdi-shopping-cart {color:#333;}
 
 /*//////////////////////////////////////////////////////////////////
 [ S-Text 0 - 15 ]*/
